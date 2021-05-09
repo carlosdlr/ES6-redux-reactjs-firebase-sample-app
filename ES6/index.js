@@ -1,15 +1,15 @@
 /* 
 var variables can be reassingned
 */
-/*
+
 var name = "carlos";
 console.log(name);
 name = "andres";
 console.log(name);
-------------------
+/*------------------
 log:
 carlos
-andres
+andres*/
 
 function printName() {
     var name = "carlos"; // when the variable is declare here this variable can be access just inside the function 
@@ -37,10 +37,10 @@ if(name == "carlos") {
 let name = "Carlos";
 let name = "Carlos";
 console.log(name); // will throw SyntaxError: Identifier 'name' has already been declared
-*/
+
 /****************************************************************************************/
 
-/* let and const variables
+/* let and const variables*/
 
 var name = "Carlos";
 if (name == "Carlos") {
@@ -87,9 +87,9 @@ person.gender = 'female' // we cannot change the variable reference to the objec
 
 
 console.log(person.name);
-console.log(person.gender);*/
+console.log(person.gender);
 /********************************************************************************************************/
-/* Arrows Functions 
+/* Arrows Functions */
 const integersArray = [1,2,3]; //map allows transform each element of the array
 
 //without arrow function
@@ -101,9 +101,9 @@ console.log(updatedIntegersArrayFunc);
 //with arrow function
 let updatedIntegersArrayArrow = integersArray.map(number => number *= 2);
 console.log(updatedIntegersArrayArrow);
-*/
 
-/*const ages = [23, 42, 6, 18]; //filter function allows to get specific data from an array
+
+const ages = [23, 42, 6, 18]; //filter function allows to get specific data from an array
 const adultsFunc = ages.filter(function (age) {
     return age > 20;
 });
@@ -111,22 +111,22 @@ const adultsFunc = ages.filter(function (age) {
 const adultsArrow = ages.filter(age => age > 20);
 console.log(adultsFunc);
 console.log(adultsArrow);
-*/
+
 /****************************************************************************/
-/** template strings
+/** template strings */
 const name = "bill";
 const age = 35;
 
 const sentence = `My name is ${name}, and I am ${age} years old`;
 console.log(sentence);
-*/
+
 
 /****************************************************************************/
-/* function constructors prototypes
-//const person = {
-  //  name: 'Bill',
-   // age: 50
-//};
+/* function constructors prototypes*/
+const person = {
+  name: 'Bill',
+  age: 50
+};
 
 function Person(name, age) { //constructor function
     this.name = name;
@@ -139,10 +139,9 @@ Person.prototype.speak = function () {
 
 const bill = new Person('Bill', 40); // use new to instantiate a new function or object
 bill.speak();
-*/
 
 /****************************************************************************/
-/* classes
+/* classes */
 
 class Person {
 
@@ -165,7 +164,6 @@ const bill = new Person('Bill', 50, ['sean', 'steph']);
 bill.speak();
 bill.birth('jess');
 console.log(bill.children);
-*/
 
 /****************************************************************************/
 /* spread operator */
@@ -175,11 +173,11 @@ console.log(...names) //remove brackets and commas from the output
 
 // concatenate arrays and adding a value between them ['John', 'Bill', 'Sam', 'Middle Value', 'William', 'Paul', 'Mike']
 // ES5 implementation
-//let allNames = [];
-//allNames = allNames.concat(names);
-//allNames.push('Middle Value');
-//allNames = allNames.concat(moreNames);
-//console.log(allNames);
+let allNames = [];
+allNames = allNames.concat(names);
+allNames.push('Middle Value');
+allNames = allNames.concat(moreNames);
+console.log(allNames);
 
 //ES6 implementation spread operator
 const allNames = [...names, 'Middle Value', ...moreNames];
