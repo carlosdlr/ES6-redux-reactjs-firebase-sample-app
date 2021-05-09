@@ -11,7 +11,7 @@ To start the app `yarn start` will listen in the dev server on port 3000
 
 In this project you will find the firebase token and database configuration below /photowall-redux/src/database/config.js , change this with your firebase configuration.
 
-# Repository of the react implmentation
+# React + Redux + Firebase implmentation repository
 
 <a href="https://github.com/carlosdlr/photowall-redux"> https://github.com/carlosdlr/photowall-redux </a>
 
